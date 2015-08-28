@@ -1,0 +1,34 @@
+package br.com.fiap.beans;
+
+public class Telefone {
+	
+	private short ddd;
+	private int numero;
+	
+	public String getTelefone() {
+		return "(" + ddd + ") " + numero;
+	}
+	
+	public short getDdd() {
+		return ddd;
+	}
+	public void setDdd(short ddd) {
+		this.ddd = ddd;
+	}
+	public int getNumero() {
+		return numero;
+	}
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+	public Telefone(short ddd, int numero) {
+		super();
+		this.ddd = ddd;
+		this.numero = numero;
+	}
+	public Telefone() {
+		super();
+	}
+	
+	
+}

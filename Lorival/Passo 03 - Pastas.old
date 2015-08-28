@@ -1,0 +1,26 @@
+c:
+cd\
+md \Bubbles\Departamentos\
+md \Bubbles\Departamentos\Administracao
+md \Bubbles\Departamentos\Marketing
+md \Bubbles\Departamentos\Presidencia
+md \Bubbles\Departamentos\Vendas
+md \Bubbles\Departamentos\Vendas\Sul-Oeste
+md \Bubbles\Departamentos\Vendas\Norte-Leste
+md \Bubbles\Departamentos\Vendas\Mercosul
+md \Bubbles\Departamentos\Compras\
+md \Bubbles\Departamentos\Compras\Contratos
+md \Bubbles\Departamentos\RH\
+md \Bubbles\Departamentos\RH\DP
+md \Bubbles\Departamentos\RH\CVs
+md \Bubbles\Departamentos\Auditoria\
+md \Bubbles\Departamentos\Auditoria\Relatorios
+md \Bubbles\Departamentos\Auditoria\Logs
+md \Bubbles\Sistemas\
+md \Bubbles\Sistemas\SAP
+md \Bubbles\Sistemas\CRM
+md \Bubbles\Usuarios\
+md \Bubbles\TI\
+md \Bubbles\TI\Suporte
+md \Bubbles\TI\Drives
+pause

@@ -1,0 +1,28 @@
+package br.com.fiap.testes;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.swing.JOptionPane;
+
+import br.com.fiap.beans.Estado;
+
+public class Teste1 {
+
+	public static void main(String[] args) {
+		Set<Estado> myState = new HashSet<Estado>();
+		Set<Integer> myDdd = new HashSet<Integer>();
+				
+		int resp = 0;
+		while(resp==0){
+			int ddd = Short.parseShort(JOptionPane.showInputDialog("Qual o número do DDD ?"));
+			
+			resp = (JOptionPane.showConfirmDialog(null, "Deseja cadastrar mais DDD's", "SetList de Estados"
+					, JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE));
+			Estado e = new Estado();
+			
+		}
+		
+	}
+
+}

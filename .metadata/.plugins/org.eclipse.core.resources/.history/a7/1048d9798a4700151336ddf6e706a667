@@ -1,0 +1,9 @@
+package br.com.fiap.beans;
+
+public class Telefone {
+	
+	private short ddd;
+	private int numero;
+	
+	
+}

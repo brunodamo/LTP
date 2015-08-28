@@ -1,0 +1,41 @@
+package br.com.fiap.teste;
+
+import javax.swing.JOptionPane;
+
+import br.com.fiap.beans.Acessorio;
+import br.com.fiap.beans.Veiculo;
+
+public class Teste {
+	public static void main(String[] args) {
+
+
+		Veiculo veiculoVetor[] = new Veiculo[5];
+
+		int respAcessorio;
+		int veiculo =0;
+		int respCarro =0;
+
+		while(respCarro == 0){
+			veiculoVetor[veiculo].setAnoFabricacao(Integer.parseInt(JOptionPane.showInputDialog("Qual o ano de fabricação do veículo ?")));
+			veiculoVetor[veiculo].setModelo(JOptionPane.showInputDialog("Qual o modelo do veículo ?"));
+			veiculoVetor[veiculo].setMontadora(JOptionPane.showInputDialog("Qual a montadora do veículo ?"));
+			veiculoVetor[veiculo].setValor(Double.parseDouble("Qual o valor do veículo ?"));
+			respAcessorio = JOptionPane.showConfirmDialog(null, "Deseja adicionar um acessório ?", "Adicionar acessórios", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+			while (respAcessorio == 0){
+				Acessorio[] a = new Acessorio[3];
+				int acessorio=0;
+				if ((acessorio<a.length) && (respAcessorio == 0)){
+					a[acessorio].setDescricao(JOptionPane.showInputDialog("Qual a descrição do acessório ?"));
+					a[acessorio].setValor(Double.parseDouble(JOptionPane.showInputDialog("Qual o valor do acessório ?")));
+					respAcessorio = JOptionPane.showConfirmDialog(null, "Deseja adicionar mais um acessório ?", "Adicionar acessórios", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+					acessorio++;
+				}
+			}
+			respAcessorio=0;
+			veiculo++;
+			respCarro = JOptionPane.showConfirmDialog(null, "Deseja adicionar mais um carro ?", "Adicionar carro", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+		}
+		
+
+	}
+}

@@ -1,0 +1,26 @@
+package br.com.fiap.teste;
+
+import javax.swing.JOptionPane;
+
+import br.com.fiap.beans.Veiculo;
+
+public class Teste {
+	public static void main(String[] args) {
+		
+		int intAnoF;
+		String StrModelo;
+		String StrMontadora;
+		int respAcessorios = 0;
+		
+		for (int veiculo = 0; veiculo < 5; veiculo++) {
+			Veiculo v = new Veiculo();
+			v.setAnoFabricacao(intAnoF = Integer.parseInt(JOptionPane.showInputDialog("Qual o ano de fabricação do veículo ?")));
+			v.setModelo(StrModelo = JOptionPane.showInputDialog("Qual o modelo do veículo ?"));
+			v.setMontadora(StrMontadora = JOptionPane.showInputDialog("Qual a montadora do veículo ?"));
+			while (respAcessorios == 0){
+				JOptionPane.showConfirmDialog(null, "Deseja adicionar um acessório ?", "Adicionar acessórios", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+			}
+		}
+		
+	}
+}

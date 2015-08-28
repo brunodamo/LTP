@@ -1,0 +1,9 @@
+package br.com.fiap.beans;
+
+import java.util.Set;
+
+public class Estado {
+	private String nome;
+	private String sigla;
+	private Set<Integer> ddd;
+}

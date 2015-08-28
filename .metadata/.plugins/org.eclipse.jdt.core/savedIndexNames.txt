@@ -1,0 +1,7 @@
+INDEX VERSION 1.127+Q:\2o semestre\LTP\.metadata\.plugins\org.eclipse.jdt.core
+4030068179.index
+2910816846.index
+1738654444.index
+921853915.index
+1197376185.index
+2502902422.index

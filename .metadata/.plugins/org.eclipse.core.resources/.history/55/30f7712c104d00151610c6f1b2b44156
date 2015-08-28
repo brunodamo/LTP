@@ -1,0 +1,40 @@
+package br.com.fiap.teste;
+
+import javax.swing.JOptionPane;
+
+import br.com.fiap.beans.Acessorio;
+import br.com.fiap.beans.Veiculo;
+
+public class Teste {
+	public static void main(String[] args) {
+		
+		
+		Veiculo veiculoVetor[] = new Veiculo[5];
+		Acessorio acessorioVetor[] = new Acessorio[3]; 
+		int intAnoF;
+		String StrModelo;
+		String StrMontadora;
+		int respAcessorio;
+		
+		for (int veiculo = 0; veiculo < veiculoVetor.length; veiculo++) {
+			Veiculo v = new Veiculo();
+			v.setAnoFabricacao(intAnoF = Integer.parseInt(JOptionPane.showInputDialog("Qual o ano de fabricação do veículo ?")));
+			v.setModelo(StrModelo = JOptionPane.showInputDialog("Qual o modelo do veículo ?"));
+			v.setMontadora(StrMontadora = JOptionPane.showInputDialog("Qual a montadora do veículo ?"));
+			respAcessorio = JOptionPane.showConfirmDialog(null, "Deseja adicionar um acessório ?", "Adicionar acessórios", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+			while (respAcessorio == 0){
+				for (int acessorio = 0; acessorio < acessorioVetor.length; acessorio++) {
+					Acessorio a = new Acessorio();
+					a.setDescricao(JOptionPane.showInputDialog("Qual a descrição do acessório ?"));
+					a.setValor(Double.parseDouble(JOptionPane.showInputDialog("Qual o valor do acessório ?")));
+					respAcessorio = JOptionPane.showConfirmDialog(null, "Deseja adicionar mais um acessório ?", "Adicionar acessórios", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+					v.setAcessorio(acessorioVetor[acessorio]);
+				}
+			}
+			respAcessorio=0;
+			v = veiculoVetor[veiculo];
+		}
+		
+		
+	}
+}

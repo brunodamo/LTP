@@ -1,0 +1,15 @@
+package br.com.fiap.beans;
+
+public class Telefone {
+	
+	private short ddd;
+	private int numero;
+	
+	public void Telefone (short d, int n){
+		
+	}
+	public String getTelefone(){
+		return 
+	}
+	
+}
