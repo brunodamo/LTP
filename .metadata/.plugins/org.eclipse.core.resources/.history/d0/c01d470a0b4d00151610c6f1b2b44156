@@ -1,6 +1,0 @@
-package br.com.fiap.beans;
-
-public class Acessorio {
-	private String descricao;
-	private double valor;
-}

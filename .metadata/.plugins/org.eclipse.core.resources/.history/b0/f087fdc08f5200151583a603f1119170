@@ -1,0 +1,33 @@
+package br.com.fiap.testes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.JOptionPane;
+
+import br.com.fiap.beans.Cargo;
+import br.com.fiap.excecoes.Excecao;
+
+public class CopyOfTesteCargoCamada_v3 {
+	public static void main(String[] args) throws Excecao{
+		
+		String strCargo = null, strNivel = null;
+		double dblSalario=0;
+		int resp=0;
+		List<Cargo> lstCargos = new ArrayList<Cargo>();
+		try{
+			while(resp==0){
+				strCargo=JOptionPane.showInputDialog("Digite o cargo");
+				strNivel=JOptionPane.showInputDialog("Digite o nivel");
+				dblSalario=Double.parseDouble(JOptionPane.showInputDialog("Digite o salário"));
+				Cargo c = new Cargo(strCargo, strNivel, dblSalario);
+				lstCargos.add(c);
+				resp = JOptionPane.showConfirmDialog(null, "Continuar Cadastrando?", "Camadas", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+			}
+			
+			
+		}catch (Exception e){
+			throw new Excecao(e);
+		}
+	}
+}

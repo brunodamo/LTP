@@ -1,0 +1,16 @@
+package br.com.fiap.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import br.com.fiap.beans.Cargo;
+import br.com.fiap.excecoes.Excecao;
+
+public class CargoDAO {
+	private List<Cargo> lstCargos = new ArrayList<Cargo>();
+	
+	public String gravar (Cargo c) throws Excecao{
+		lstCargos.add(c);
+		return "Gravado com sucesso";
+	}
+}

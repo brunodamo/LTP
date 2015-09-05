@@ -1,0 +1,18 @@
+package br.com.fiap.testes;
+
+import java.util.ArrayList;
+
+public class TesteCargoCamada {
+	public static void main(String[] args) {
+		String strCargo = null, strNivel = null;
+		double dblSalario=0;
+		int resp=0;
+		List<Cargo> lstCargos = new ArrayList<Cargo>();
+		try{
+			
+			
+		}catch (Exception(e){
+			throw new Excecao(e);
+		}
+	}
+}

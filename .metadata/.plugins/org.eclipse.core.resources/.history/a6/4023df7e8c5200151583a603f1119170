@@ -1,0 +1,23 @@
+package br.com.fiap.testes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import br.com.fiap.beans.Cargo;
+import br.com.fiap.excecoes.Excecao;
+
+public class TesteCargoCamada {
+	public static void main(String[] args) throws Excecao{
+		
+		String strCargo = null, strNivel = null;
+		double dblSalario=0;
+		int resp=0;
+		List<Cargo> lstCargos = new ArrayList<Cargo>();
+		try{
+			
+			
+		}catch (Exception(e){
+			throw new Excecao(e);
+		}
+	}
+}

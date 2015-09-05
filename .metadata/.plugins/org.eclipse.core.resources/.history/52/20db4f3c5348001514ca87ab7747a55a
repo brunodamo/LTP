@@ -1,7 +1,0 @@
-package br.com.fiap.beans;
-
-public class Estado {
-	private String nome;
-	private String sigla;
-	private Set<Integer> ddd;
-}
